@@ -1,11 +1,11 @@
-# Some common iterators for Java
+# Some collection interfaces and implementations
 
-[![Build Status](https://travis-ci.org/markenwerk/java-commons-collections.svg?branch=master)](https://travis-ci.org/markenwerk/java-commons-iterators)
+[![Build Status](https://travis-ci.org/markenwerk/java-commons-collections.svg?branch=master)](https://travis-ci.org/markenwerk/java-commons-collections)
 [![Coverage Status](https://coveralls.io/repos/markenwerk/java-commons-collections/badge.svg?branch=master&service=github)](https://coveralls.io/github/markenwerk/java-commons-collections?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/564dd82a771e41003f000001/badge.svg)](https://www.versioneye.com/user/projects/564dd82a771e41003f000001)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/commons-collections/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/commons-iterators)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/commons-collections/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/commons-collections)
 [![Java SE 6](https://img.shields.io/badge/java-SE_6-brightgreen.svg)](http://docs.oracle.com/javase/8/docs/api/)
-[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/markenwerk/java-commons-iterators/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/markenwerk/java-commons-collections/blob/master/LICENSE)
 
 ## Overview
 
