@@ -36,7 +36,7 @@ This library provides collections for clear-cut API design. Most libraries just 
 2. Add methods that mimic the desired subset of the behavior of the JAVA collection class to the API interface, i.e. by adding `add()`, `addAll()`, ... instead of a getter-method for an unmodifiable JAVA collection. This is undesirable because it pollutes the API interface with a lot of methods, especially if the API interface has more than one such collection (and the method names need to be suffixed accordingly), it will easily become inconsistent, complicate testing and generally defeats the purpose of OOP.
 3. Add just the minimum subset of methods that mimic the behavior of a collection class, i.e. by adding `add()`, ..., but no convenience methods like `addAll()`. This has all the disadvantages of the previous option, but with added inconvenience.
 
-This is where this library comes in. It provides interfaces for collections with read-only-access, write-only-access and for common data-structures. If, for example, an API wants to publish a stack, it can't use JAVA collections, because ther is no pure stack. A [`List`][`List`] and even a [`Stack`](http://docs.oracle.com/javase/8/docs/api/index.html?java/util/List.html) offer a lot of methods, that allow "un-stack-like" access. 
+This is where this library comes in. It provides interfaces for collections with read-only-access, write-only-access and for common data-structures. If, for example, an API wants to publish a stack, it can't use JAVA collections, because ther is no pure stack. A [`List`][List] and even a [`Stack`](http://docs.oracle.com/javase/8/docs/api/index.html?java/util/List.html) offer a lot of methods, that allow "un-stack-like" access. 
 
 ## Interfaces
 
