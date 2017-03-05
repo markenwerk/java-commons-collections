@@ -197,7 +197,6 @@ This library provides [`AbstractSequence`][AbstractSequence] as a base implement
 [ListSequence]: https://markenwerk.github.io/java-commons-collections/index.html?net/markenwerk/commons/collections/sequences/ListSequence.html
 [Sequence]: https://markenwerk.github.io/java-commons-collections/index.html?net/markenwerk/commons/collections/sequences/Sequence.html
 
-[Handler]: https://markenwerk.github.io/java-commons-interfaces/index.html?net/markenwerk/commons/interfaces/Handler.html
 [Predicate]: https://markenwerk.github.io/java-commons-interfaces/index.html?net/markenwerk/commons/interfaces/Predicate.html
 
 [Collection]: https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Collection.html
