@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
-	<description>Simplified views of Java collections</description>
+	<description>Some collection interfaces and implementations</description>
 	<url>${urls.github}</url>
 	<inceptionYear>2016</inceptionYear>
 
@@ -99,7 +99,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.6</version>
+				<version>3.0.2</version>
 				<configuration>
 					<archive>
 						<addMavenDescriptor>false</addMavenDescriptor>
@@ -131,7 +131,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>2.4</version>
+				<version>3.0.1</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -145,14 +145,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.3</version>
-				<configuration>
-					<notimestamp>true</notimestamp>
-					<links>
-						<link>https://markenwerk.github.io/java-commons-interfaces/</link>
-						<link>https://markenwerk.github.io/java-commons-iterators/</link>
-					</links>
-				</configuration>
+				<version>2.10.4</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -217,6 +210,28 @@
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.10.4</version>
+						<configuration>
+							<notimestamp>true</notimestamp>
+							<includeDependencySources>true</includeDependencySources>
+							<includeTransitiveDependencySources>true</includeTransitiveDependencySources>
+							<dependencySourceIncludes>
+								<dependencySourceInclude>net.markenwerk:*</dependencySourceInclude>
+							</dependencySourceIncludes>
+						</configuration>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-scm-publish-plugin</artifactId>
 						<version>1.1</version>
 						<configuration>
@@ -250,6 +265,11 @@
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
 						<version>0.7.9</version>
+						<configuration>
+							<excludes>
+								<exclude>**/*Exception.*</exclude>
+							</excludes>
+						</configuration>
 						<executions>
 							<execution>
 								<id>prepare-agent</id>
@@ -269,4 +289,4 @@
 			</build>
 		</profile>
 	</profiles>
-</project>	
+</project>
