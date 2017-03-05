@@ -1,0 +1,10 @@
+net.markenwerk.commons.collections
+net.markenwerk.commons.collections.sequences
+net.markenwerk.commons.collections.sinks
+net.markenwerk.commons.collections.sources
+net.markenwerk.commons.collections.stacks
+net.markenwerk.commons.datastructures
+net.markenwerk.commons.exceptions
+net.markenwerk.commons.interfaces
+net.markenwerk.commons.iterables
+net.markenwerk.commons.iterators
